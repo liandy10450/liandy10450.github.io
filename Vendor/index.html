@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Vendor App</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!--Script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+  </head>
+  <body>
+    <div class="container">
+        <div class="NoticeBoard">
+            <span style="float:left;">
+              <h3>Notice Board:</h3>
+                <textarea>
+                    Notice of last database updated
+                    Notice of any errors that occured on the server
+                </textarea>
+            </span>
+            <span style="float:right;">
+              You have XX Outstanding MRs
+            </span>
+        </div>
+        
+        <div class="mainBody">
+          <h1>Vendor Application</h1>
+          <h3>Welcome Username</h3>
+          <div class="buttonGroup">
+            <button onclick="window.location.href = 'view.html';">View Orders</button><br>            
+            <button onclick="window.location.href = 'cancel.html';">Cancel Orders</button><br>
+            <button onclick="window.location.href = 'cancel.html';">End</button><br>
+
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">View Orders</button>
+
+            <div id="id01" class="w3-modal w3-animate-opacity">
+              <div class="w3-modal-content w3-card-4">
+                <header class="w3-container w3-teal"> 
+                  <span onclick="document.getElementById('id01').style.display='none'" 
+                  class="w3-button w3-large w3-display-topright">&times;</span>
+                  <h2>View Orders</h2>
+                </header>
+                <div class="w3-container">
+                  <p>Outstanding Orders</p>
+                  <table style="width:100%">
+                    <tr>
+                      <th>MR</th>
+                      <th>WHSE:</th> 
+                      <th>Ship To</th>
+                    </tr>
+                    <tr>
+                      <td>5461847</td>
+                      <td>A10</td>
+                      <td>John</td>
+                    </tr>
+                    <tr>
+                      <td>1234584</td>
+                      <td>A10</td>
+                      <td>Teresa</td>
+                    </tr>
+                    <tr>
+                      <td>975123</td>
+                      <td>D-15</td>
+                      <td>Alex</td>
+                    </tr>
+                  </table>
+
+                  <p>Current Orders</p>
+                  <table style="width:100%">
+                    <tr>
+                      <th>MR</th>
+                      <th>WHSE:</th> 
+                      <th>Ship To</th>
+                    </tr>
+                    <tr>
+                      <td>4572215</td>
+                      <td>D74</td>
+                      <td>Frank</td>
+                    </tr>
+                    <tr>
+                      <td>5444123</td>
+                      <td>A10</td>
+                      <td>Jamie</td>
+                    </tr>
+                    <tr>
+                      <td>77754436</td>
+                      <td>D-15</td>
+                      <td>Sean</td>
+                    </tr>
+                  </table>
+                </div>
+                <footer class="w3-container w3-teal">
+                  <button type="button" onclick="alert('I AM PROCESSING!')">Process Orders</button>
+                  <button type="button" onclick="alert('I AM PRINTING!')">Print Orders</button>
+                  <button type="button" onclick="alert('I AM MODIFIED!')">Modify Orders</button>
+                  <button type="button" onclick="alert('I AM CLOSING!')">Close Orders</button>
+                </footer>
+              </div>
+            </div>
+
+          </div><!--End Button Group-->
+        </div>          
+          <!--End-->
+    </div><!--End of Container-->     
+  </body>
+</html>
