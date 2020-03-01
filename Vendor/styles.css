@@ -1,5 +1,25 @@
+body{
+  background-image: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* The hero image */
+.hero-image {  
+  background-image: url("logo.svg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 10%;
+  position: relative;
+}
+
 .container{
-    margin: auto;
+  margin: auto;
   width: 50%;
   height: 50%;
   border: 3px solid green;
